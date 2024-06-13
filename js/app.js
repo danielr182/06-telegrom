@@ -1,10 +1,5 @@
-const url = window.location.href;
-let swLocation = '/telegrom-pwa/sw.js';
 
 if (navigator.serviceWorker) {
-  if (url.includes('localhost')) {
-    swLocation = '/sw.js';
-  }
   navigator.serviceWorker.register('sw.js');
 }
 
