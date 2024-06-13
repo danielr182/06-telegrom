@@ -10,7 +10,6 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     overscroll-behavior-y: contain;
-    padding-top: env(safe-area-inset-top);
 
     margin: 0px !important;
     color: #7f8c8d;
@@ -262,7 +261,8 @@ textarea {
     margin: auto;
     background-color: #3498db;
     text-shadow: #2084c7 1px 1px 0;
-    padding: 1em 0 !important;
+    padding: 1em 0;
+    padding-top: max(env(safe-area-inset-top, 1em), 1em);
     color: white;
     text-align: center;
     /* margin-top: 1em; */
